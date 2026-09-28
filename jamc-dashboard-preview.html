@@ -1,0 +1,488 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Penerimaan UP JAMC — pratinjau</title><script>
+/* PRATINJAU: fetch() di-stub dengan data contoh (fiktif). Di Laravel, data datang dari route jamc.data. */
+(function(){var D={"tahun": "2026", "jenis": [{"nama": "Sewa Gedung, Kantor \"A\"", "total": 10595750000.0, "bulanan": [1250000000.0, 1310000000.0, 1180000000.0, 1405500000.0, 1390000000.0, 1275250000.0, 1420000000.0, 1365000000.0, 0.0, 0.0, 0.0, 0.0]}, {"nama": "Sewa Lahan", "total": 4100500000.0, "bulanan": [640000000.0, 655000000.0, 0.0, 700000000.0, 690500000.0, 0.0, 710000000.0, 705000000.0, 0.0, 0.0, 0.0, 0.0]}, {"nama": "Iklan & Reklame", "total": 455000000.0, "bulanan": [120000000.0, 0.0, 95000000.0, 0.0, 130000000.0, 0.0, 0.0, 110000000.0, 0.0, 0.0, 0.0, 0.0]}, {"nama": "Pemanfaatan Aset Lain", "total": 0.0, "bulanan": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}], "monthly_total": [2010000000.0, 1965000000.0, 1275000000.0, 2105500000.0, 2210500000.0, 1275250000.0, 2130000000.0, 2180000000.0, 0.0, 0.0, 0.0, 0.0], "target": [{"nama": "Iklan & Reklame", "target": 500000000.0, "realisasi": 455000000.0, "persen": 91.0, "is_total": false}, {"nama": "Pemanfaatan Aset Lain", "target": 0.0, "realisasi": 0.0, "persen": 0.0, "is_total": false}, {"nama": "Sewa Gedung, Kantor \"A\"", "target": 16000000000.0, "realisasi": 10595750000.0, "persen": 66.22, "is_total": false}, {"nama": "Sewa Lahan", "target": 9000000000.0, "realisasi": 4100500000.0, "persen": 45.56, "is_total": false}, {"nama": "TOTAL PENERIMAAN EXCL. LLPAD", "target": 25500000000.0, "realisasi": 15151250000.0, "persen": 59.42, "is_total": true}, {"nama": "TOTAL PENERIMAAN INCL. LLPAD", "target": 27500000000.0, "realisasi": 16385817890.0, "persen": 59.58, "is_total": true}], "total_realisasi": 16385817890.0, "total_target": 27500000000.0, "persen_capaian": 59.58, "perbandingan": {"items": [{"tahun": "2023", "total": 30100000000.0}, {"tahun": "2024", "total": 33500000000.0}, {"tahun": "2025", "total": 36250000000.0}, {"tahun": "2026", "total": 40900000000.0}], "yoy_persen": 12.83}, "triwulan": [{"tw": "TW I", "target_persen": 20.0, "target_nilai": 8000000000.0, "realisasi": 9100000000.0, "realisasi_persen": 113.75, "selisih": 1100000000.0}, {"tw": "TW II", "target_persen": 45.0, "target_nilai": 18000000000.0, "realisasi": 17600000000.0, "realisasi_persen": 97.78, "selisih": -400000000.0}, {"tw": "TW III", "target_persen": 70.0, "target_nilai": 28000000000.0, "realisasi": 12000000000.0, "realisasi_persen": 42.86, "selisih": -16000000000.0}, {"tw": "TW IV", "target_persen": 100.0, "target_nilai": 40000000000.0, "realisasi": 0.0, "realisasi_persen": 0.0, "selisih": -40000000000.0}]};var real=window.fetch;
+window.fetch=function(u,o){if(String(u).indexOf('/jamc/data')===0){var p=JSON.parse(JSON.stringify(D));p.fetched_at=new Date().toISOString();p.stale=false;p.stale_reason=null;
+return new Promise(function(r){setTimeout(function(){r(new Response(JSON.stringify(p),{status:200,headers:{'Content-Type':'application/json'}}));},350);});}
+return real.apply(this,arguments);};})();
+</script></head><body style="margin:0">
+<div id="jamc-app" data-url="/jamc/data" data-judul="Penerimaan UP JAMC">
+    <div class="jamc-wrap" id="jamc-root" aria-live="polite"></div>
+</div>
+
+
+<style>
+#jamc-app{--bg:#eef2f6;--emerald:#047857;--green:#16a34a;--amber:#f59e0b;--red:#ef4444;--indigo:#6366f1;--ink:#111827;--sub:#6b7280;--track:#edeff3;
+  font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--bg);
+  min-height:100vh;padding:18px 14px 36px;line-height:1.3;-webkit-text-size-adjust:100%}
+#jamc-app *,#jamc-app *::before,#jamc-app *::after{box-sizing:border-box}
+#jamc-app button{font:inherit;color:inherit}
+#jamc-app .jamc-wrap{max-width:1120px;margin:0 auto}
+#jamc-app svg{width:1em;height:1em;fill:currentColor;flex:none}
+
+#jamc-app .c-emerald{--c:var(--emerald)} #jamc-app .c-green{--c:var(--green)} #jamc-app .c-amber{--c:var(--amber)}
+#jamc-app .c-red{--c:var(--red)} #jamc-app .c-indigo{--c:var(--indigo)}
+#jamc-app strong.c-emerald,#jamc-app strong.c-green,#jamc-app strong.c-amber,#jamc-app strong.c-red,#jamc-app strong.c-indigo{color:var(--c)}
+
+#jamc-app .jamc-head{display:flex;align-items:center;gap:8px;margin-bottom:14px}
+#jamc-app .jamc-head .ico{font-size:18px;color:var(--sub)}
+#jamc-app .jamc-head .ttl{flex:1;min-width:0}
+#jamc-app .jamc-head .ttl b{display:block;font-size:12.5px;font-weight:500;color:var(--sub)}
+#jamc-app .jamc-head .ttl small{display:block;font-size:10.5px;color:#9ca3af;margin-top:2px}
+#jamc-app .jamc-icon-btn{border:0;cursor:pointer;background:rgba(4,120,87,.10);color:var(--emerald);width:34px;height:34px;border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;font-size:18px;transition:background .15s}
+#jamc-app .jamc-icon-btn:hover{background:rgba(4,120,87,.18)}
+#jamc-app .jamc-icon-btn:disabled{cursor:progress;opacity:.7}
+#jamc-app .jamc-icon-btn.spin svg{animation:jamc-spin .8s linear infinite}
+
+#jamc-app .jamc-banner{border-radius:12px;padding:10px 14px;font-size:12px;margin-bottom:14px;background:#fffbeb;color:#92400e;border:1px solid #fde68a}
+
+#jamc-app .jamc-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));align-items:start}
+#jamc-app .jamc-card{background:#fff;border-radius:16px;padding:16px;box-shadow:0 6px 14px rgba(0,0,0,.05);min-width:0}
+#jamc-app .jamc-card.full{grid-column:1/-1}
+#jamc-app .jamc-card h2{margin:0;font-size:14.5px;font-weight:700}
+#jamc-app .jamc-card .sub{margin:2px 0 14px;font-size:11.5px;color:var(--sub)}
+#jamc-app .jamc-sub{font-size:11.5px;color:var(--sub)}
+
+#jamc-app .jamc-bar{height:var(--h,9px);border-radius:6px;background:var(--track);overflow:hidden}
+#jamc-app .jamc-bar>i{display:block;height:100%;width:var(--w,0%);border-radius:6px;background-color:var(--c);
+  background-image:linear-gradient(90deg,rgba(255,255,255,.28),rgba(255,255,255,0));transition:width .6s ease}
+
+#jamc-app .jamc-hero{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+#jamc-app .jamc-hero>div:first-child{flex:1;min-width:0}
+#jamc-app .jamc-hero-num{font-size:26px;font-weight:800;color:var(--emerald);line-height:1.15;word-break:break-word}
+#jamc-app .jamc-chip{display:inline-flex;align-items:center;gap:4px;border-radius:20px;padding:6px 10px;font-size:11px;font-weight:700}
+#jamc-app .jamc-chip.up{background:rgba(22,163,74,.10);color:var(--green)}
+#jamc-app .jamc-chip.down{background:rgba(239,68,68,.10);color:var(--red)}
+#jamc-app .jamc-chip svg{font-size:15px}
+#jamc-app .jamc-between{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
+#jamc-app .jamc-between strong{font-size:13px;font-weight:800}
+
+#jamc-app .jamc-list{display:flex;flex-direction:column;gap:12px}
+#jamc-app .jamc-row{display:block;width:100%;border:0;background:none;padding:3px 0;text-align:left;cursor:pointer;border-radius:8px}
+#jamc-app button.jamc-row:hover{background:#f8fafc}
+#jamc-app .jamc-row .top{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+#jamc-app .jamc-row .nm{flex:1;min-width:0;font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#jamc-app .jamc-row .val{font-size:12px;font-weight:700;color:var(--emerald);white-space:nowrap}
+#jamc-app .jamc-row .chev{color:var(--sub);font-size:17px;margin-left:-2px}
+#jamc-app .jamc-row .note{margin-top:4px;font-size:10.5px;color:var(--sub)}
+#jamc-app .jamc-row.static{cursor:default}
+#jamc-app .jamc-hr{height:1px;background:#f0f1f4;margin:0}
+
+#jamc-app .jamc-months{display:flex;align-items:flex-end;gap:6px;height:180px}
+#jamc-app .jamc-month{flex:1;min-width:0;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+  border:0;background:none;padding:0;cursor:pointer;border-radius:6px}
+#jamc-app .jamc-month:hover{background:#f8fafc}
+#jamc-app .jamc-month .col{width:min(70%,34px);height:var(--h,0px);border-radius:5px 5px 0 0;background:linear-gradient(0deg,#047857,rgba(4,120,87,.6));transition:height .6s ease}
+#jamc-app .jamc-month span{margin:6px 0 4px;font-size:10px;font-weight:600}
+#jamc-app .jamc-month.zero span{color:#b0b6c0}
+
+#jamc-app .jamc-tw{display:inline-block;border-radius:8px;padding:3px 8px;background:rgba(4,120,87,.10);color:var(--emerald);font-size:11px;font-weight:700}
+#jamc-app .jamc-yr{display:flex;align-items:center;gap:8px}
+#jamc-app .jamc-yr .y{width:44px;font-size:12px;font-weight:700}
+#jamc-app .jamc-yr .jamc-bar{flex:1}
+#jamc-app .jamc-yr .v{min-width:92px;text-align:right;font-size:11px;font-weight:700;color:var(--c)}
+
+#jamc-app .jamc-dialog{border:0;border-radius:18px;padding:0;width:min(92vw,520px);max-height:82vh;overflow:hidden;color:var(--ink);background:#fff;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+#jamc-app .jamc-dialog::backdrop{background:rgba(17,24,39,.5)}
+#jamc-app .jamc-dialog header{display:flex;align-items:center;gap:8px;background:var(--emerald);color:#fff;padding:12px 8px 12px 18px}
+#jamc-app .jamc-dialog header svg{font-size:20px}
+#jamc-app .jamc-dialog header h3{flex:1;margin:0;font-size:14.5px;font-weight:700}
+#jamc-app .jamc-dialog header button{border:0;background:none;color:#fff;cursor:pointer;width:36px;height:36px;border-radius:50%;font-size:22px;display:inline-flex;align-items:center;justify-content:center}
+#jamc-app .jamc-dialog header button:hover{background:rgba(255,255,255,.15)}
+#jamc-app .jamc-dialog .body{padding:16px;overflow:auto;max-height:calc(82vh - 60px)}
+#jamc-app .jamc-dialog .big{font-size:24px;font-weight:800;color:var(--emerald);display:flex;align-items:flex-end;gap:8px;flex-wrap:wrap}
+#jamc-app .jamc-dialog .big small{font-size:11px;font-weight:500;color:var(--sub);padding-bottom:5px}
+#jamc-app .jamc-dialog h4{margin:16px 0 6px;font-size:12.5px;font-weight:700;color:var(--emerald)}
+#jamc-app .jamc-drow{display:flex;align-items:center;gap:8px;padding:5px 0}
+#jamc-app .jamc-drow .l{width:96px;font-size:11.5px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#jamc-app .jamc-drow .jamc-bar{flex:1}
+#jamc-app .jamc-drow .r{width:96px;text-align:right;font-size:11px;font-weight:700}
+
+#jamc-app .jamc-skel{background:#fff;border-radius:16px;margin-bottom:14px;position:relative;overflow:hidden}
+#jamc-app .jamc-skel::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(230,233,239,.9),transparent);animation:jamc-shimmer 1.3s infinite}
+#jamc-app .jamc-err{text-align:center;padding:60px 24px}
+#jamc-app .jamc-err>svg{font-size:54px;color:var(--sub)}
+#jamc-app .jamc-btn svg{font-size:16px}
+#jamc-app .jamc-err h2{margin:14px 0 6px;font-size:16px}
+#jamc-app .jamc-err p{margin:0 auto 18px;max-width:420px;font-size:12px;color:var(--sub)}
+#jamc-app .jamc-btn{border:0;cursor:pointer;background:var(--emerald);color:#fff;border-radius:10px;padding:11px 22px;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:8px}
+#jamc-app .jamc-btn:hover{filter:brightness(1.08)}
+
+@keyframes jamc-spin{to{transform:rotate(360deg)}}
+@keyframes jamc-shimmer{to{transform:translateX(100%)}}
+@media (max-width:480px){
+  #jamc-app{padding:14px 10px 28px}
+  #jamc-app .jamc-hero-num{font-size:22px}
+  #jamc-app .jamc-months{gap:3px}
+  #jamc-app .jamc-yr .v{min-width:80px}
+}
+@media (prefers-reduced-motion:reduce){
+  #jamc-app .jamc-bar>i,#jamc-app .jamc-month .col{transition:none}
+  #jamc-app .jamc-icon-btn.spin svg,#jamc-app .jamc-skel::after{animation:none}
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  var app = document.getElementById('jamc-app');
+  if (!app) return;
+  var mount = app.querySelector('#jamc-root');
+  var DATA_URL = app.getAttribute('data-url');
+  var JUDUL = app.getAttribute('data-judul') || 'Penerimaan UP JAMC';
+
+  var BULAN = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
+  var BULAN_FULL = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+
+  var state = { data: null, refreshing: false, error: null, notice: null };
+  var inFlight = false;
+
+  // ── Ikon (SVG statis, tanpa data dari sheet) ───────────────────────────────
+  var ICON = {
+    wallet: 'M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z',
+    refresh: 'M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z',
+    close: 'M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z',
+    chevron: 'M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z',
+    up: 'M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z',
+    down: 'M16 18l2.29-2.29-4.88-4.88-4 4L2 7.41 3.41 6l6 6 4-4 6.3 6.29L22 12v6z',
+    cloudOff: 'M19.35 10.04C18.67 6.59 15.64 4 12 4c-1.48 0-2.85.43-4.01 1.17l1.46 1.46C10.21 6.23 11.08 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3 0 1.13-.64 2.11-1.56 2.62l1.45 1.45C23.16 18.16 24 16.68 24 15c0-2.64-2.05-4.78-4.65-4.96zM3 5.27l2.75 2.74C2.56 8.15 0 10.77 0 14c0 3.31 2.69 6 6 6h11.73l2 2L21 20.73 4.27 4 3 5.27zM7.73 10l8 8H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h1.73z',
+    doc: 'M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z',
+    calendar: 'M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z'
+  };
+  function icon(name) {
+    var ns = 'http://www.w3.org/2000/svg';
+    var svg = document.createElementNS(ns, 'svg');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('aria-hidden', 'true');
+    var p = document.createElementNS(ns, 'path');
+    p.setAttribute('d', ICON[name]);
+    svg.appendChild(p);
+    return svg;
+  }
+
+  // ── DOM helper: HANYA textContent / createTextNode (teks sheet tidak pernah jadi HTML) ──
+  function h(tag, attrs, children) {
+    var el = document.createElement(tag);
+    if (attrs) {
+      Object.keys(attrs).forEach(function (k) {
+        var v = attrs[k];
+        if (v === null || v === undefined || v === false) return;
+        if (k === 'class') el.className = v;
+        else if (k === 'text') el.textContent = v;
+        else if (k.slice(0, 2) === 'on') el.addEventListener(k.slice(2), v);
+        else el.setAttribute(k, v === true ? '' : v);
+      });
+    }
+    (children || []).forEach(function (c) {
+      if (c === null || c === undefined || c === false) return;
+      el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+    });
+    return el;
+  }
+  function clear(el) { while (el.firstChild) el.removeChild(el.firstChild); }
+
+  // ── Format angka (sama dengan _rp / _pct di mobile) ────────────────────────
+  function rp(v) {
+    var neg = v < 0, a = Math.abs(v), s;
+    if (a >= 1e12) s = (a / 1e12).toFixed(2) + ' T';
+    else if (a >= 1e9) s = (a / 1e9).toFixed(2) + ' M';
+    else if (a >= 1e6) s = (a / 1e6).toFixed(1) + ' Jt';
+    else s = a.toFixed(0);
+    return 'Rp ' + (neg ? '-' : '') + s.replace('.', ',');
+  }
+  function rpFull(v) { return 'Rp ' + Math.round(v).toLocaleString('id-ID'); }
+  function pct(p) { return (p % 1 === 0 ? p.toFixed(0) : p.toFixed(2)) + '%'; }
+  function pctColor(p) { return p >= 100 ? 'c-green' : p >= 60 ? 'c-emerald' : p >= 30 ? 'c-amber' : 'c-red'; }
+  function num(v) { return typeof v === 'number' && isFinite(v) ? v : 0; }
+  function maxOf(arr, pick) { return arr.reduce(function (m, e) { var v = pick ? pick(e) : e; return v > m ? v : m; }, 0); }
+  function fmtTime(iso) {
+    var t = new Date(iso);
+    if (isNaN(t.getTime())) return '';
+    return t.toLocaleString('id-ID', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+  }
+
+  function bar(frac, colorClass, height) {
+    var f = Math.min(Math.max(isFinite(frac) ? frac : 0, 0), 1);
+    var fill = h('i');
+    fill.setAttribute('data-w', (f * 100).toFixed(2) + '%');
+    return h('div', { class: 'jamc-bar ' + colorClass, style: '--h:' + height + 'px' }, [fill]);
+  }
+  // Isi bar diberi lebar setelah dipasang agar transisinya terlihat.
+  function animate() {
+    window.requestAnimationFrame(function () {
+      Array.prototype.forEach.call(mount.querySelectorAll('.jamc-bar>i'), function (i) {
+        i.style.setProperty('--w', i.getAttribute('data-w'));
+      });
+      Array.prototype.forEach.call(mount.querySelectorAll('.jamc-month .col'), function (c) {
+        c.style.setProperty('--h', c.getAttribute('data-h'));
+      });
+    });
+  }
+
+  function card(title, subtitle, children, extra) {
+    return h('section', { class: 'jamc-card' + (extra ? ' ' + extra : '') }, [
+      h('h2', { text: title }),
+      h('p', { class: 'sub', text: subtitle || '' })
+    ].concat(children));
+  }
+
+  // ── Popup ──────────────────────────────────────────────────────────────────
+  function openDialog(title, iconName, nodes) {
+    var dlg = h('dialog', { class: 'jamc-dialog', 'aria-label': title }, [
+      h('header', null, [
+        icon(iconName),
+        h('h3', { text: title }),
+        h('button', { type: 'button', 'aria-label': 'Tutup', onclick: function () { closeDialog(dlg); } }, [icon('close')])
+      ]),
+      h('div', { class: 'body' }, nodes)
+    ]);
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) closeDialog(dlg); }); // klik latar
+    dlg.addEventListener('close', function () { if (dlg.parentNode) dlg.parentNode.removeChild(dlg); });
+    app.appendChild(dlg);
+    if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+    animate2(dlg);
+  }
+  function closeDialog(dlg) {
+    if (typeof dlg.close === 'function') dlg.close(); else if (dlg.parentNode) dlg.parentNode.removeChild(dlg);
+  }
+  function animate2(scope) {
+    window.requestAnimationFrame(function () {
+      Array.prototype.forEach.call(scope.querySelectorAll('.jamc-bar>i'), function (i) {
+        i.style.setProperty('--w', i.getAttribute('data-w'));
+      });
+    });
+  }
+  function detailRow(label, value, maxV) {
+    return h('div', { class: 'jamc-drow' }, [
+      h('span', { class: 'l', title: label, text: label }),
+      bar(maxV > 0 ? value / maxV : 0, 'c-emerald', 7),
+      h('span', { class: 'r', title: rpFull(value), text: rp(value) })
+    ]);
+  }
+  function showJenis(d, j, grand) {
+    var share = grand > 0 ? j.total / grand * 100 : 0;
+    var b = (j.bulanan || []).map(num);
+    var maxM = maxOf(b);
+    var rows = [];
+    b.forEach(function (v, i) { if (v !== 0) rows.push(detailRow(BULAN[i], v, maxM)); });
+    openDialog(j.nama, 'doc', [
+      h('div', { class: 'big' }, [h('span', { text: rp(j.total), title: rpFull(j.total) }), h('small', { text: pct(share) + ' dari total' })]),
+      h('h4', { text: 'Rincian Bulanan ' + d.tahun })
+    ].concat(rows.length ? rows : [h('p', { class: 'jamc-sub', text: 'Belum ada realisasi.' })]));
+  }
+  function showBulan(d, m) {
+    var items = (d.jenis || []).map(function (j) { return { nama: j.nama, v: num((j.bulanan || [])[m]) }; })
+      .filter(function (e) { return e.v !== 0; })
+      .sort(function (a, b) { return b.v - a.v; });
+    var maxItem = maxOf(items, function (e) { return e.v; });
+    var totalBulan = num((d.monthly_total || [])[m]);
+    openDialog(BULAN_FULL[m] + ' ' + d.tahun, 'calendar', [
+      h('div', { class: 'big', title: rpFull(totalBulan), text: rp(totalBulan) }),
+      h('p', { class: 'jamc-sub', text: 'total penerimaan bulan ini' }),
+      h('h4', { text: 'Rincian per Jenis' })
+    ].concat(items.length
+      ? items.map(function (e) { return detailRow(e.nama, e.v, maxItem); })
+      : [h('p', { class: 'jamc-sub', text: 'Belum ada realisasi.' })]));
+  }
+
+  // ── Kartu-kartu ────────────────────────────────────────────────────────────
+  function header(d) {
+    var when = d.fetched_at ? 'Diperbarui ' + fmtTime(d.fetched_at) : '';
+    return h('div', { class: 'jamc-head' }, [
+      h('span', { class: 'ico' }, [icon('wallet')]),
+      h('div', { class: 'ttl' }, [
+        h('b', { text: JUDUL + ' · Tahun ' + d.tahun }),
+        when ? h('small', { text: when }) : null
+      ]),
+      h('button', {
+        type: 'button', 'class': 'jamc-icon-btn' + (state.refreshing ? ' spin' : ''), 'aria-label': 'Muat ulang data', title: 'Muat ulang',
+        disabled: state.refreshing, onclick: function () { load(true); }
+      }, [icon('refresh')])
+    ]);
+  }
+
+  function hero(d) {
+    var real = num(d.total_realisasi), target = num(d.total_target), persen = num(d.persen_capaian);
+    var yoy = num(d.perbandingan && d.perbandingan.yoy_persen), naik = yoy >= 0;
+    return card('Total Realisasi Penerimaan', 'Terhadap target tahun ' + d.tahun, [
+      h('div', { class: 'jamc-hero' }, [
+        h('div', null, [
+          h('div', { class: 'jamc-hero-num', title: rpFull(real), text: rp(real) }),
+          h('div', { class: 'jamc-sub', text: 'dari target ' + rp(target) })
+        ]),
+        h('div', { class: 'jamc-chip ' + (naik ? 'up' : 'down') }, [icon(naik ? 'up' : 'down'), h('span', { text: pct(yoy) + ' YoY' })])
+      ]),
+      h('div', { class: 'jamc-between' }, [
+        h('span', { class: 'jamc-sub', text: 'Capaian target' }),
+        h('strong', { class: pctColor(persen), text: pct(persen) })
+      ]),
+      bar(persen / 100, pctColor(persen), 11)
+    ], 'full');
+  }
+
+  function perJenis(d) {
+    var list = d.jenis || [];
+    if (!list.length) return null;
+    var maxV = maxOf(list, function (j) { return num(j.total); });
+    var grand = list.reduce(function (s, j) { return s + num(j.total); }, 0);
+    return card('Realisasi per Jenis Penerimaan', 'Klik jenis untuk rincian bulanan', [
+      h('div', { class: 'jamc-list' }, list.map(function (j) {
+        var share = grand > 0 ? num(j.total) / grand * 100 : 0;
+        return h('button', { type: 'button', class: 'jamc-row', onclick: function () { showJenis(d, j, grand); } }, [
+          h('div', { class: 'top' }, [
+            h('span', { class: 'nm', title: j.nama, text: j.nama }),
+            h('span', { class: 'val', title: rpFull(num(j.total)), text: rp(num(j.total)) }),
+            h('span', { class: 'chev' }, [icon('chevron')])
+          ]),
+          bar(maxV > 0 ? num(j.total) / maxV : 0, 'c-emerald', 8),
+          h('div', { class: 'note', text: pct(share) + ' dari total' })
+        ]);
+      }))
+    ]);
+  }
+
+  function bulanan(d) {
+    var m = (d.monthly_total || []).map(num);
+    if (m.length < 12) return null;
+    var maxV = maxOf(m);
+    return card('Realisasi Bulanan ' + d.tahun, 'Klik batang bulan untuk rincian per jenis', [
+      h('div', { class: 'jamc-months' }, m.slice(0, 12).map(function (v, i) {
+        var height = (maxV > 0 && v > 0) ? Math.min(Math.max(v / maxV * 130, 3), 130) : 0;
+        var col = h('div', { class: 'col', title: BULAN_FULL[i] + ': ' + rpFull(v) });
+        col.setAttribute('data-h', height.toFixed(1) + 'px');
+        return h('button', { type: 'button', class: 'jamc-month' + (v > 0 ? '' : ' zero'), 'aria-label': BULAN_FULL[i] + ' ' + rpFull(v), onclick: function () { showBulan(d, i); } }, [
+          col, h('span', { text: BULAN[i] })
+        ]);
+      }))
+    ]);
+  }
+
+  function target(d) {
+    var list = (d.target || []).filter(function (t) { return !t.is_total; });
+    if (!list.length) return null;
+    var rows = [];
+    list.forEach(function (t, i) {
+      if (i > 0) rows.push(h('div', { class: 'jamc-hr' }));
+      var ada = num(t.target) > 0, persen = num(t.persen), color = pctColor(persen);
+      rows.push(h('div', { class: 'jamc-row static' }, [
+        h('div', { class: 'top' }, [
+          h('span', { class: 'nm', title: t.nama, text: t.nama }),
+          ada ? h('strong', { class: color, text: pct(persen) }) : null
+        ]),
+        ada ? bar(persen / 100, color, 8) : null,
+        h('div', { class: 'note', text: ada ? rp(num(t.realisasi)) + '  /  ' + rp(num(t.target)) : 'Realisasi ' + rp(num(t.realisasi)) + ' (tanpa target)' })
+      ]));
+    });
+    return card('Target vs Realisasi', 'Capaian per jenis penerimaan', [h('div', { class: 'jamc-list' }, rows)]);
+  }
+
+  function triwulan(d) {
+    var list = d.triwulan || [];
+    if (!list.length) return null;
+    return card('Capaian per Triwulan', 'Target akumulasi vs realisasi (Perjanjian Kinerja)', [
+      h('div', { class: 'jamc-list' }, list.map(function (t) {
+        var color = pctColor(num(t.realisasi_persen));
+        return h('div', { class: 'jamc-row static' }, [
+          h('div', { class: 'top' }, [
+            h('span', { class: 'jamc-tw', text: t.tw }),
+            h('span', { class: 'jamc-sub', text: 'Target ' + pct(num(t.target_persen)) }),
+            h('span', { class: 'nm' }),
+            h('strong', { class: color, text: pct(num(t.realisasi_persen)) })
+          ]),
+          bar(num(t.realisasi_persen) / 100, color, 9),
+          h('div', { class: 'note', text: rp(num(t.realisasi)) + '  /  ' + rp(num(t.target_nilai)) })
+        ]);
+      }))
+    ]);
+  }
+
+  function perbandingan(d) {
+    var items = (d.perbandingan && d.perbandingan.items) || [];
+    if (!items.length) return null;
+    var maxV = maxOf(items, function (e) { return num(e.total); });
+    return card('Perbandingan Tahun', 'Total penerimaan (incl. Jagir)', [
+      h('div', { class: 'jamc-list' }, items.map(function (e) {
+        var now = String(e.tahun) === String(d.tahun), color = now ? 'c-emerald' : 'c-indigo';
+        return h('div', { class: 'jamc-yr ' + color }, [
+          h('span', { class: 'y', text: e.tahun, style: now ? 'color:#047857' : null }),
+          bar(maxV > 0 ? num(e.total) / maxV : 0, color, 9),
+          h('span', { class: 'v', title: rpFull(num(e.total)), text: rp(num(e.total)) })
+        ]);
+      }))
+    ]);
+  }
+
+  function banner(text) { return h('div', { class: 'jamc-banner', role: 'status', text: text }); }
+
+  function skeleton() {
+    var box = function (px) { return h('div', { class: 'jamc-skel', style: 'height:' + px + 'px' }); };
+    return h('div', { 'aria-busy': 'true', 'aria-label': 'Memuat data' }, [box(46), box(150), box(230), box(180), box(200)]);
+  }
+
+  function errorView(msg) {
+    return h('div', { class: 'jamc-err' }, [
+      icon('cloudOff'),
+      h('h2', { text: 'Gagal memuat data' }),
+      h('p', { text: msg }),
+      h('button', { type: 'button', class: 'jamc-btn', onclick: function () { load(false); } }, [icon('refresh'), h('span', { text: 'Coba Lagi' })])
+    ]);
+  }
+
+  // ── Render & muat data ─────────────────────────────────────────────────────
+  function render() {
+    clear(mount);
+    if (!state.data) {
+      mount.appendChild(state.error ? errorView(state.error) : skeleton());
+      return;
+    }
+    var d = state.data;
+    mount.appendChild(header(d));
+    if (d.stale) {
+      mount.appendChild(banner('Menampilkan data tersimpan' + (d.fetched_at ? ' (' + fmtTime(d.fetched_at) + ')' : '') +
+        '. ' + (d.stale_reason || 'Sumber data sedang tidak dapat dihubungi.')));
+    }
+    if (state.notice) mount.appendChild(banner(state.notice));
+
+    var grid = h('div', { class: 'jamc-grid' });
+    [hero, perJenis, bulanan, target, triwulan, perbandingan].forEach(function (fn) {
+      var node = fn(d);
+      if (node) grid.appendChild(node);
+    });
+    mount.appendChild(grid);
+    animate();
+  }
+
+  function load(refresh) {
+    if (inFlight) return; // satu permintaan pada satu waktu
+    inFlight = true;
+    state.error = null;
+    state.notice = null;
+    state.refreshing = state.data !== null; // pertama kali = skeleton, berikutnya data lama tetap tampil
+    render();
+
+    var url = DATA_URL + (refresh ? (DATA_URL.indexOf('?') >= 0 ? '&' : '?') + 'refresh=1' : '');
+    return fetch(url, { headers: { 'Accept': 'application/json' }, credentials: 'same-origin' })
+      .then(function (res) {
+        return res.json().catch(function () { return null; }).then(function (body) {
+          if (!body) throw new Error(res.ok ? 'Respons server tidak valid (bukan data dashboard).' : 'Server membalas kode ' + res.status + '.');
+          if (!res.ok) throw new Error(body.message || 'Server membalas kode ' + res.status + '.');
+          return body;
+        });
+      })
+      .then(function (body) { state.data = body; })
+      .catch(function (e) {
+        var msg = (e && e.message && e.message.indexOf('Failed to fetch') === -1 && e.name !== 'TypeError')
+          ? e.message : 'Periksa koneksi Anda lalu coba lagi.';
+        if (state.data) state.notice = 'Gagal memperbarui data: ' + msg;
+        else state.error = msg;
+      })
+      .then(function () { inFlight = false; state.refreshing = false; render(); });
+  }
+
+  render();
+  load(false);
+})();
+</script>
+
+<!-- <div style="position:fixed;right:10px;bottom:10px;z-index:9999;background:#111827;color:#fff;font:11px system-ui,sans-serif;padding:6px 10px;border-radius:8px;opacity:.88">Pratinjau · data contoh (fiktif)</div></body></html> -->
